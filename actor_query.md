@@ -1,4 +1,4 @@
-# Actor Read Pattern with Promises
+# Actor Query with Promises
 
 It is quite a common problem to fetch values from actors. We want to 
 do that for various reasons, such as supplying external system with
