@@ -1,3 +1,3 @@
 # ponylang-pattens
 
-* HOWTO: Actor Query
+* HOWTO: [actor_query.md](Actor Query)
