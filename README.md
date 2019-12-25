@@ -1,2 +1,3 @@
 # ponylang-pattens
-My own collection of patterns in Pony Language
+
+* HOWTO: Actor Query
