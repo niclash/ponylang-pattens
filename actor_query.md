@@ -105,13 +105,13 @@ that a lot of the boilerplate needed can be hidden away.
 So, how does this magic Collector look like?
 
 ```
-interface val Collectable[IN: Any #any !, OUT:Any #share]
+interface val Collectable[IN: Any #alias, OUT:Any #share]
   fun apply( c:IN, p:Promise[OUT] )
 
 interface val Reducable[OUT:Any #share]
   fun apply( c: Array[OUT] val)
   
-primitive Collector[IN: Any #any !, OUT:Any #share]
+primitive Collector[IN: Any #alias, OUT:Any #share]
   fun apply( collection':Iterator[IN], fetch:Collectable[IN,OUT], reduce:Reducable[OUT] ) =>
     let promises = Array[Promise[OUT]]
     for c in collection' do
